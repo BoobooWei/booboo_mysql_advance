@@ -138,7 +138,7 @@ MYSQL入门：
 
 | Action Class 操作类 | 进展   |
 | ------------------- | ------ |
-| 数据库安装配置      | 未开始 |
+| 数据库安装配置      | [数据库安装配置](ActionClass/DatabaseInstallationConfiguration) |
 | 数据库监控部署      | 未开始 |
 | 数据库数据归档      | 未开始 |
 | 数据库备份恢复      | 未开始 |

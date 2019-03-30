@@ -1,4 +1,43 @@
-[TOC]
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [概述](#概述)
+- [部署方式](#部署方式)
+- [软件说明](#软件说明)
+	- [软件版本说明](#软件版本说明)
+	- [软件下载地址](#软件下载地址)
+- [前提条件](#前提条件)
+	- [配置](#配置)
+- [依赖关系包](#依赖关系包)
+- [安装步骤](#安装步骤)
+	- [在线安装_在RedHat上安装](#在线安装在redhat上安装)
+		- [使用yum（推荐）](#使用yum推荐)
+			- [1 查看MariaDB Server版本](#1-查看mariadb-server版本)
+			- [2 Yum安装MariaDB Server](#2-yum安装mariadb-server)
+			- [3 查看软件架构](#3-查看软件架构)
+	- [在线安装_在Ubuntu上安装](#在线安装在ubuntu上安装)
+		- [1 导入GnuPG签名密钥](#1-导入gnupg签名密钥)
+		- [2 新钥匙](#2-新钥匙)
+		- [3 将MariaDB添加到sources.list](#3-将mariadb添加到sourceslist)
+		- [4 使用apt-get安装MariaDB](#4-使用apt-get安装mariadb)
+	- [离线安装_二进制手动安装](#离线安装二进制手动安装)
+		- [1 下载二进制文件](#1-下载二进制文件)
+		- [2 解压文件到安装路径](#2-解压文件到安装路径)
+		- [3 确保二进制文件位于PATH环境变量中列出的目录中。](#3-确保二进制文件位于path环境变量中列出的目录中)
+- [配置步骤](#配置步骤)
+	- [在线源YUM安装的启动方式](#在线源yum安装的启动方式)
+- [启动数据库](#启动数据库)
+- [停止数据库](#停止数据库)
+- [重启数据库](#重启数据库)
+	- [在线源DEB安装的启动方式](#在线源deb安装的启动方式)
+- [启动数据库](#启动数据库)
+- [停止数据库](#停止数据库)
+- [重启数据库](#重启数据库)
+	- [二进制包安装的启动方式](#二进制包安装的启动方式)
+		- [自动启动mysqld](#自动启动mysqld)
+		- [安装后](#安装后)
+- [验证](#验证)
+
+<!-- /TOC -->
 
 # 概述
 
@@ -74,7 +113,7 @@ MariaDB：MySQL的直接替代品
     ```shell
     SELINUX=permissive
     ```
-    
+
     必须重新引导系统才能使更改生效。
 
     您可以改为使用setenforce更改为permissive模式。 setenforce不需要重新启动但不是持久性的。或者，您可以选择在安装Linux操作系统时不安装SELinux软件包，或选择删除相关软件包。此选项是最具侵入性的，不建议使用。
@@ -181,8 +220,8 @@ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F2
 在该工具中，根据您使用的分发版选择“debian”或“ubuntu”，然后选择特定版本，然后选择要安装的MariaDB版本。例如，以下是使用主MariaDB镜像和Ubuntu 14.04“可信” 添加[MariaDB 10.0](https://mariadb.com/kb/en/what-is-mariadb-100/)存储库的说明：
 
 ```shell
-udo apt-get install software-properties-common 
-sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db 
+udo apt-get install software-properties-common
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
 sudo add-apt-repository 'deb http://ftp.osuosl.org/pub/mariadb/repo/10.0/ubuntu trusty main'
 ```
 
@@ -303,7 +342,7 @@ systemctl start mysql
 
 查看监听端口是否启动 `ss -luntp | grep mysql`
 
-客户端登陆方式：`mysql` 
+客户端登陆方式：`mysql`
 
 ```shell
 [root@mastera0 ~]# ps -ef|grep mysqld
@@ -313,4 +352,3 @@ root      2694  2347  0 13:56 pts/0    00:00:00 grep --color=auto mysqld
 [root@mastera0 ~]# netstat -luntp|grep mysqld
 tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      2653/mysqld
 ```
-

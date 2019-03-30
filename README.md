@@ -1,11 +1,39 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [booboo_mysql_advance](#booboomysqladvance)
+	- [入门要求](#入门要求)
+		- [阿里云ACP认证考试](#阿里云acp认证考试)
+		- [MySQL基本功](#mysql基本功)
+	- [MySQL 高级教程培训](#mysql-高级教程培训)
+		- [总结能力](#总结能力)
+		- [代码能力](#代码能力)
+		- [事件处理要求](#事件处理要求)
+	- [自我学习与沉淀](#自我学习与沉淀)
+		- [高阶](#高阶)
+		- [技术能力](#技术能力)
+		- [业务能力](#业务能力)
+		- [推荐书籍](#推荐书籍)
+			- [工作效率](#工作效率)
+			- [MySQL的使用相关书籍](#mysql的使用相关书籍)
+			- [MySQL的源码相关书籍](#mysql的源码相关书籍)
+	- [培训专题预览](#培训专题预览)
+		- [Advice Class](#advice-class)
+		- [Action Class](#action-class)
+		- [Failure Class](#failure-class)
+		- [Rescue Class](#rescue-class)
+		- [Migration Class](#migration-class)
+		- [Optimize Class](#optimize-class)
+		- [Development Class](#development-class)
+		- [Explore Class](#explore-class)
+
+<!-- /TOC -->
+
 # booboo_mysql_advance
 > MySQL 高级教程
 
-[TOC]
+关于我:不积跬步无以至千里，不积小流无以成江河。
 
-**关于我：**不积跬步无以至千里，不积小流无以成江河。
-
-**更新计划：**每周一个专题，不断完善。
+更新计划：每周一个专题，不断完善。
 
 ## 入门要求
 
@@ -29,8 +57,8 @@
 
 - [linux基础命令培训](https://github.com/BoobooWei/booboo_linux_base)
 - [MySQL数据库初级培训](https://github.com/booboowei/booboo_mysql)
-- 一、笔试题目 <https://www.wenjuan.in/s/JjAFVj/> 
-  二、上机题目 
+- 一、笔试题目 <https://www.wenjuan.in/s/JjAFVj/>
+  二、上机题目
   基础部分 <https://cloudcare.itcloudlab.com/courses/sections/1d30ef9c010f47d1a3713c4de573c2aa/learning> 故障排查 <https://cloudcare.itcloudlab.com/courses/ed378f2a28e34b3aa8a07179b430c6ec/detail>
 
 
@@ -214,4 +242,3 @@ MYSQL入门：
 | ------------------------------------------------ | ------ |
 | RDS For MySQL 5.7 到IDC机房自建MySQL主从搭建研究 | 未开始 |
 | 大表删除方案研究                                 | 未开始 |
-

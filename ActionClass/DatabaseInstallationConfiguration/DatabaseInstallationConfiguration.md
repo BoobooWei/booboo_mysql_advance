@@ -1,6 +1,14 @@
-# 数据库安装配置
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-[TOC]
+- [数据库安装配置](#数据库安装配置)
+	- [规范](#规范)
+		- [资源存储](#资源存储)
+		- [脚本库、软件安装规范](#脚本库软件安装规范)
+	- [安装文档](#安装文档)
+
+<!-- /TOC -->
+
+# 数据库安装配置
 
 ## 规范
 
@@ -23,4 +31,3 @@
 | ------ | ---------- | ------------------------------------------- |
 | 单节点 | MariaDB    | [MariaDB单节点安装](install_doc/MariaDB.md) |
 |        | MySQL      | [MySQL单节点安装](install_doc/MySQL.md)     |
-

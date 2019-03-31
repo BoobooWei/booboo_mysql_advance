@@ -24,10 +24,23 @@
 
 数据库安装部署脚本需求，对接到DBA组，DBA组需要至多一个工作日内提供安装脚本（特殊复杂软件脚本除外），上传至gitlab中。
 
-
 ## 安装文档
 
-| 架构   | MySQL 版本 | 安装文档                                    |
-| ------ | ---------- | ------------------------------------------- |
-| 单节点 | MariaDB    | [MariaDB单节点安装](install_doc/MariaDB.md) |
-|        | MySQL      | [MySQL单节点安装](install_doc/MySQL.md)     |
+> 更新时间：2019-04-01
+
+| 架构        | MySQL 分支                 | 最新版本 | 文档                                                         | 脚本                                 |
+| ----------- | -------------------------- | -------- | ------------------------------------------------------------ | ------------------------------------ |
+| Node        | MariaDB                    | 10.2.23  | [MariaDB单节点安装](install_doc/MariaDB.md)                  | [MariaDB二进制安装](install_script/) |
+|             | MySQL                      | 8.0.15   | [MySQL单节点安装](install_doc/MySQL.md)                      | [MySQL二进制安装](install_script/)   |
+|             | PerconaServer For MySQL    | 8.0.15   | [PerconaServer官方帮助文档](<https://www.percona.com/doc/percona-server/LATEST/index.html>) | [Percona二进制安装](install_script/) |
+|             | Aliyun RDS For MySQL       | 5.7      | [RDS For MySQL官方帮助文档](<https://help.aliyun.com/document_detail/67687.html?spm=a2c4g.11186623.6.542.7385e2e0ZxrDzM>) |                                      |
+|             | AWS RDS For MySQL          | 8.0      | [AWS RDS For MySQL官方帮助文档](<https://docs.amazonaws.cn/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.MySQL.html>) |                                      |
+|             | QCloud TencentDB for MySQL | 5.7      | [TencentDB For MySQL官方帮助文档](<https://cloud.tencent.com/document/product/236/30969>) |                                      |
+|             | UCloud UDB-MySQL           | 5.6      | [UDB-MySQL官方帮助文档](<https://www.ucloud.cn/site/product/udb.html>) |                                      |
+|             | 分支压力测试               |          | [单节点压力测试文档](sysbench/)                              | [压测脚本](install_script/)          |
+| Replication | 半同步复制                 |          |                                                              |                                      |
+|             | MySQL主从+Consul           |          | 自动故障转移                                                 |                                      |
+|             | MHA+keepalived             |          | 自动故障转移+主从自动重构                                    |                                      |
+| Cluster     | MySQL MGR                  |          | 组复制                                                       |                                      |
+|             | Percona Xtra Cluter        |          | 集群                                                         |                                      |
+|             |                            |          |                                                              |                                      |
